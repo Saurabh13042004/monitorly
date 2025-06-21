@@ -62,6 +62,10 @@ export default function DashboardPage() {
     setSidebarOpen(false);
   };
 
+  const handleAddMonitor = () => {
+    setShowAddModal(true);
+  };
+
   const handleMonitorAction = (action: string, monitorName: string) => {
     addToast({
       type: 'success',
@@ -82,7 +86,7 @@ export default function DashboardPage() {
     return (
       <div>
         <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
-        <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
+        <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onAddMonitor={handleAddMonitor} />
         
         <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
           <div className="max-w-7xl mx-auto">
@@ -122,7 +126,7 @@ export default function DashboardPage() {
   return (
     <div>
       <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
-      <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
+      <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onAddMonitor={handleAddMonitor} />
       
       <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
         <div className="max-w-7xl mx-auto">
@@ -132,7 +136,7 @@ export default function DashboardPage() {
               <h1 className="text-3xl font-bold text-white">Dashboard</h1>
               <p className="text-gray-400 mt-1">Monitor your websites and services</p>
             </div>
-            <Button onClick={() => setShowAddModal(true)}>
+            <Button onClick={handleAddMonitor}>
               <Plus className="h-4 w-4 mr-2" />
               Add Monitor
             </Button>
