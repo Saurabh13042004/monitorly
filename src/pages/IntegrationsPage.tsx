@@ -116,7 +116,7 @@ export default function IntegrationsPage() {
       <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
-      <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-64'}`}>
+      <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-64'}`}>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-8">
@@ -227,7 +227,7 @@ export default function IntegrationsPage() {
                 <div className="flex space-x-2">
                   {integration.connected ? (
                     <>
-                      <Button variant="secondary\" size="sm\" className="flex-1">
+                      <Button variant="secondary" size="sm" className="flex-1">
                         <Settings className="h-4 w-4 mr-1" />
                         Configure
                       </Button>
@@ -271,10 +271,12 @@ export default function IntegrationsPage() {
               <p className="text-gray-300 mb-6">
                 We can build custom integrations for Enterprise customers. Contact our team to discuss your requirements.
               </p>
-              <Button>
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Contact Sales
-              </Button>
+              <div className="flex justify-center">
+                <Button>
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Contact Sales
+                </Button>
+              </div>
             </div>
           </Card>
         </div>

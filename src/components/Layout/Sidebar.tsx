@@ -14,7 +14,6 @@ import {
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
-  { name: 'Add Monitor', href: '/add-monitor', icon: Plus },
   { name: 'Alerts', href: '/alerts', icon: Bell },
   { name: 'Status Pages', href: '/status-pages', icon: Globe },
   { name: 'Integrations', href: '/integrations', icon: Puzzle },
@@ -25,9 +24,10 @@ const navigation = [
 interface SidebarProps {
   isOpen: boolean;
   onClose: () => void;
+  onAddMonitor?: () => void;
 }
 
-export default function Sidebar({ isOpen, onClose }: SidebarProps) {
+export default function Sidebar({ isOpen, onClose, onAddMonitor }: SidebarProps) {
   const location = useLocation();
 
   return (
@@ -54,6 +54,20 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
         
         <nav className="p-6">
           <ul className="space-y-2">
+            {/* Add Monitor Button */}
+            <li>
+              <button
+                onClick={() => {
+                  onAddMonitor?.();
+                  onClose();
+                }}
+                className="flex items-center space-x-3 px-4 py-3 rounded-2xl transition-all w-full text-left bg-gray-800 text-white border border-gray-700 hover:bg-gray-700 hover:border-gray-600 hover:shadow-md mb-4"
+              >
+                <Plus className="h-5 w-5" />
+                <span className="font-medium">Add Monitor</span>
+              </button>
+            </li>
+            
             {navigation.map((item) => {
               const isActive = location.pathname === item.href;
               return (
