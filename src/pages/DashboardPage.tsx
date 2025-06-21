@@ -88,7 +88,7 @@ export default function DashboardPage() {
         <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
         <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onAddMonitor={handleAddMonitor} />
         
-        <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
+        <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
           <div className="max-w-7xl mx-auto">
             {/* Header Skeleton */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
@@ -128,7 +128,7 @@ export default function DashboardPage() {
       <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onAddMonitor={handleAddMonitor} />
       
-      <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
+      <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">

@@ -116,7 +116,7 @@ export default function IntegrationsPage() {
       <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
-      <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-64'}`}>
+      <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-64'}`}>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-8">

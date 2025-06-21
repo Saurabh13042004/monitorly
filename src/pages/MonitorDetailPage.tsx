@@ -72,7 +72,7 @@ export default function MonitorDetailPage() {
       <div>
         <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
         <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
-        <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'} flex items-center justify-center`}>
+        <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'} flex items-center justify-center`}>
           <div className="text-center">
             <h1 className="text-2xl font-bold text-white mb-4">Monitor not found</h1>
             <Link to="/dashboard">
@@ -89,7 +89,7 @@ export default function MonitorDetailPage() {
       <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
-      <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
+      <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="flex items-center mb-8">
