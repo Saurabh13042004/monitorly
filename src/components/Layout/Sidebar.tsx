@@ -61,7 +61,7 @@ export default function Sidebar({ isOpen, onClose, onAddMonitor }: SidebarProps)
                   onAddMonitor?.();
                   onClose();
                 }}
-                className="flex items-center space-x-3 px-4 py-3 rounded-2xl transition-all w-full text-left bg-gradient-to-r from-primary/20 to-secondary/20 text-white border border-primary/30 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+                className="flex items-center space-x-3 px-4 py-3 rounded-2xl transition-all w-full text-left bg-gray-800 text-white border border-gray-700 hover:bg-gray-700 hover:border-gray-600 hover:shadow-md mb-4"
               >
                 <Plus className="h-5 w-5" />
                 <span className="font-medium">Add Monitor</span>
