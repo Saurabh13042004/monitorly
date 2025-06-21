@@ -35,14 +35,14 @@ export default function StatusPageEditor() {
   };
 
   return (
-    <div>
+    <div className="min-h-screen">
       <Navbar onToggleSidebar={toggleSidebar} sidebarOpen={sidebarOpen} />
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
       <div className={`pt-20 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="flex items-center justify-between mb-8">
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Header - Fixed positioning issue */}
+          <div className="flex items-center justify-between mb-8 relative z-20">
             <div>
               <h1 className="text-3xl font-bold text-white">Status Page Editor</h1>
               <p className="text-gray-400 mt-1">Create and customize your public status page</p>
