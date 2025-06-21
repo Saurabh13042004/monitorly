@@ -89,7 +89,7 @@ export default function DashboardPage() {
         <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onAddMonitor={handleAddMonitor} />
         
         <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl pt-16 mx-auto">
             {/* Header Skeleton */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
               <div>
@@ -129,7 +129,7 @@ export default function DashboardPage() {
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} onAddMonitor={handleAddMonitor} />
       
       <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-0'}`}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl pt-20 mx-auto">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
             <div>

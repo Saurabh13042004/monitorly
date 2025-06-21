@@ -117,7 +117,7 @@ export default function IntegrationsPage() {
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
       <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-64'}`}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl pt-20 mx-auto">
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-white">Integrations</h1>

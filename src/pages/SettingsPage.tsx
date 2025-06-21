@@ -83,7 +83,7 @@ export default function SettingsPage() {
       <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
       
       <div className={`pt-28 p-4 lg:p-8 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-64'}`}>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl pt-20 mx-auto">
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
             <div>
