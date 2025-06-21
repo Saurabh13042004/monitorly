@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Monitor, User, Bell, Settings, Menu } from 'lucide-react';
+import ThemeToggle from '../ui/ThemeToggle';
 
 interface NavbarProps {
   isLanding?: boolean;
@@ -51,9 +52,10 @@ export default function Navbar({ isLanding = false, onToggleSidebar, sidebarOpen
             </Link>
           </div>
           <div className="flex items-center space-x-4">
+            <ThemeToggle />
             <button className="relative p-2 text-gray-400 hover:text-white transition-colors">
               <Bell className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full"></span>
+              <span className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse"></span>
             </button>
             <button className="p-2 text-gray-400 hover:text-white transition-colors">
               <Settings className="h-5 w-5" />
